@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { faker } from '@faker-js/faker'
+
 
 @Component({
   selector: 'app-root',
@@ -9,4 +11,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'typing';
+  randomText= faker.lorem.sentence();
+  enteredText = '';
+
+  
 }
